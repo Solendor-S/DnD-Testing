@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+.vite/
+dist/
+dist-electron/
+out/
+*.tsbuildinfo
+
+# Electron Forge
+packages/client/out/
+
+# SRD raw source (cloned, not committed — only the built srd.db is committed)
+data/raw/
+
+# Server local dev database
+packages/server/data/*.db
+packages/server/data/*.db-*
+
+# Env
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

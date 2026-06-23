@@ -1,0 +1,71 @@
+{
+  "name": "@dnd/client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "D&D 5e desktop client (Electron + Vite + React)",
+  "author": "Sargon Shlimon",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "dev": "electron-forge start",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dnd/shared": "*",
+    "sql.js": "^1.12.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-vite": "^7.11.1",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/sql.js": "^1.4.11",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^32.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.0.12"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "asar": true,
+        "extraResource": [
+          "../../data/srd.db",
+          "../../node_modules/sql.js/dist/sql-wasm.wasm"
+        ]
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "authors": "Sargon Shlimon",
+            "description": "D&D 5e desktop app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": ["darwin"]
+        }
+      ],
+      "plugins": [
+        {
+          "name": "@electron-forge/plugin-vite",
+          "config": {
+            "build": [
+              { "entry": "electron/main.ts", "config": "vite.main.config.ts" },
+              { "entry": "electron/preload.ts", "config": "vite.preload.config.ts" }
+            ],
+            "renderer": [
+              { "name": "main_window", "config": "vite.renderer.config.ts" }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

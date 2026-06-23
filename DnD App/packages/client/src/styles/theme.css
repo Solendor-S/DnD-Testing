@@ -1,0 +1,69 @@
+/* D&D Companion — dark fantasy theme.
+   Deep stone/leather backgrounds, oxblood reds, parchment text, gold accents. */
+:root {
+  /* Surfaces */
+  --bg-base: #1a1614;
+  --bg-panel: #221d1a;
+  --bg-elevated: #2b2420;
+  --bg-input: #15110f;
+  --bg-hover: #322a25;
+  --bg-active: #3d2f28;
+
+  /* Text */
+  --text-primary: #ece3d4;
+  --text-secondary: #b3a795;
+  --text-muted: #7d7264;
+
+  /* Accents */
+  --accent: #9c1f1f;        /* oxblood red */
+  --accent-bright: #c8412c;
+  --gold: #c8a24a;
+  --gold-solid: #c8a24a;
+  --border: #3a312b;
+  --border-strong: #4a3f37;
+
+  /* Misc */
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --font-ui: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

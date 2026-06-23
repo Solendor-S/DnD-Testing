@@ -1,0 +1,27 @@
+{
+  "name": "dnd-app-root",
+  "version": "0.1.0",
+  "private": true,
+  "description": "D&D 5e desktop app — monorepo (client + server + shared)",
+  "author": "Sargon Shlimon",
+  "workspaces": [
+    "packages/shared",
+    "packages/client",
+    "packages/server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=@dnd/client",
+    "dev:server": "npm run dev --workspace=@dnd/server",
+    "fetch-srd": "tsx scripts/fetch-srd.ts",
+    "build-db": "tsx scripts/build-srd-db.ts",
+    "seed": "npm run fetch-srd && npm run build-db",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/sql.js": "^1.4.11",
+    "sql.js": "^1.12.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
