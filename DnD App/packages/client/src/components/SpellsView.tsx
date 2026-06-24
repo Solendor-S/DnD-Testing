@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import type { SpellDetail, SpellQuery, SpellSummary } from '@dnd/shared';
+import type { Advantage, SpellDetail, SpellQuery, SpellSummary } from '@dnd/shared';
+import { isRollableSpell } from '@dnd/shared';
 import { useDebounce } from '../hooks/useDebounce';
 import { useSrdQuery } from '../hooks/useSrdQuery';
+import { useDiceRoller } from '../hooks/useDiceRoller';
 import { SearchBar } from './SearchBar';
 import { EntityBrowser } from './EntityBrowser';
+import { AdvantageToggle } from './dice/AdvantageToggle';
 import { formatSpellLevel } from '../lib/formatters';
 
 const SCHOOLS = ['Abjuration', 'Conjuration', 'Divination', 'Enchantment', 'Evocation', 'Illusion', 'Necromancy', 'Transmutation'];
@@ -75,6 +78,7 @@ function SpellDetailView({ spell }: { spell: SpellDetail }) {
         <div><dt>Duration</dt><dd>{spell.concentration ? 'Concentration, ' : ''}{spell.duration}</dd></div>
         <div><dt>Classes</dt><dd>{spell.classes.join(', ')}</dd></div>
       </dl>
+      {isRollableSpell(spell) && <SpellRollControls spell={spell} />}
       <div className="detail-text">
         {spell.desc.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
         {spell.higherLevel && (
@@ -82,5 +86,41 @@ function SpellDetailView({ spell }: { spell: SpellDetail }) {
         )}
       </div>
     </article>
+  );
+}
+
+/** Cross-reference: cast a spell using the active stats, sending the rolls to the dice log. */
+function SpellRollControls({ spell }: { spell: SpellDetail }) {
+  const roller = useDiceRoller();
+  const isCantrip = spell.level === 0;
+  const [castLevel, setCastLevel] = useState(Math.max(spell.level, 1));
+  const [adv, setAdv] = useState<Advantage>('normal');
+  const slots = [];
+  for (let l = spell.level; l <= 9; l++) slots.push(l);
+
+  return (
+    <div className="spell-cast">
+      <div className="spell-cast-row">
+        {!isCantrip && (
+          <label className="stats-inline">
+            Cast at level
+            <select value={castLevel} onChange={(e) => setCastLevel(Number(e.target.value))}>
+              {slots.map((l) => <option key={l} value={l}>{l}</option>)}
+            </select>
+          </label>
+        )}
+        {spell.attackType && <AdvantageToggle value={adv} onChange={setAdv} />}
+        <button
+          className="roll-btn"
+          type="button"
+          onClick={() => roller.cast(spell, { castLevel, advantage: adv })}
+        >
+          {spell.attackType ? 'Cast (attack)' : spell.dc ? 'Cast (save)' : 'Cast'}
+        </button>
+      </div>
+      <p className="spell-cast-hint">
+        Uses your Active Stats (spellcasting ability &amp; proficiency). Rolls go to the Dice tab log.
+      </p>
+    </div>
   );
 }

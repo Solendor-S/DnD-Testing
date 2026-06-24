@@ -4,6 +4,8 @@ import { App } from './App';
 import './styles/theme.css';
 import './styles/layout.css';
 import './styles/rules-browser.css';
+import './styles/dice.css';
+import './styles/characters.css';
 
 const root = createRoot(document.getElementById('root')!);
 root.render(

@@ -13,7 +13,16 @@ import type {
   ClassDetail,
   RaceSummary,
   RaceDetail,
+  WeaponDef,
+  ArmorDef,
+  Character,
+  CharacterSummary,
+  OriginDef,
+  OriginKind,
+  BenefitChoice,
 } from '@dnd/shared';
+
+import { listCharacters, getCharacter, saveCharacter, deleteCharacter } from './userDb';
 
 // These are injected by the Electron Forge Vite plugin.
 declare const MAIN_WINDOW_VITE_DEV_SERVER_URL: string | undefined;
@@ -105,12 +114,13 @@ function registerIpc(): void {
     await openDb();
     const rows = all(
       `SELECT idx, name, level, school, classes, concentration, ritual, casting_time,
-              range, components, material, duration, desc, higher_level, damage_type
+              range, components, material, duration, desc, higher_level, damage_type, roll_data
        FROM spells WHERE idx = :i`,
       { ':i': index }
     );
     if (!rows.length) return null;
     const r = rows[0];
+    const roll = r.roll_data ? JSON.parse(r.roll_data) : {};
     return {
       index: r.idx,
       name: r.name,
@@ -127,6 +137,11 @@ function registerIpc(): void {
       desc: r.desc,
       higherLevel: r.higher_level,
       damageType: r.damage_type,
+      attackType: roll.attackType ?? null,
+      dc: roll.dc ?? null,
+      damageBySlot: roll.damageBySlot ?? null,
+      damageByCharLevel: roll.damageByCharLevel ?? null,
+      healBySlot: roll.healBySlot ?? null,
     };
   });
 
@@ -218,6 +233,78 @@ function registerIpc(): void {
       subraces: extractNames(r.subraces),
     };
   });
+
+  ipcMain.handle('srd:getWeapons', async (): Promise<WeaponDef[]> => {
+    await openDb();
+    return all('SELECT * FROM weapons ORDER BY category, name').map((r) => ({
+      index: r.idx, name: r.name, category: r.category, range: r.range,
+      damageDice: r.damage_dice, damageType: r.damage_type,
+      versatileDice: r.versatile_dice ?? null,
+      properties: JSON.parse(r.properties || '[]'),
+      normalRange: r.normal_range ?? null, longRange: r.long_range ?? null,
+    }));
+  });
+
+  ipcMain.handle('srd:getArmor', async (): Promise<ArmorDef[]> => {
+    await openDb();
+    return all('SELECT * FROM armor ORDER BY category, base').map((r) => ({
+      index: r.idx, name: r.name, category: r.category,
+      base: r.base, dexBonus: !!r.dex_bonus, maxBonus: r.max_bonus ?? null,
+      strMinimum: r.str_minimum, stealthDisadvantage: !!r.stealth_disadvantage,
+    }));
+  });
+
+  // ---------------- Origins (races/subraces/backgrounds) ----------------
+  const toOrigin = (r: any): OriginDef => ({
+    index: r.idx, name: r.name, kind: r.kind, parent: r.parent ?? null,
+    description: r.description ?? '', grant: JSON.parse(r.grant_data || '{}'),
+  });
+
+  ipcMain.handle('srd:getOrigins', async (_e, kind: OriginKind): Promise<OriginDef[]> => {
+    await openDb();
+    return all('SELECT * FROM origins WHERE kind = :k ORDER BY name', { ':k': kind }).map(toOrigin);
+  });
+
+  ipcMain.handle('srd:getOrigin', async (_e, kind: OriginKind, index: string): Promise<OriginDef | null> => {
+    await openDb();
+    const rows = all('SELECT * FROM origins WHERE kind = :k AND idx = :i', { ':k': kind, ':i': index });
+    return rows.length ? toOrigin(rows[0]) : null;
+  });
+
+  ipcMain.handle('srd:getSubraces', async (_e, raceIndex: string): Promise<OriginDef[]> => {
+    await openDb();
+    return all("SELECT * FROM origins WHERE kind = 'subrace' AND parent = :p ORDER BY name", { ':p': raceIndex }).map(toOrigin);
+  });
+
+  ipcMain.handle('srd:getSubclasses', async (_e, classIndex: string): Promise<OriginDef[]> => {
+    await openDb();
+    return all("SELECT * FROM origins WHERE kind = 'subclass' AND parent = :p ORDER BY name", { ':p': classIndex }).map(toOrigin);
+  });
+
+  ipcMain.handle('srd:getClassChoices', async (_e, classIndex: string): Promise<BenefitChoice[]> => {
+    await openDb();
+    const rows = all('SELECT data FROM classes WHERE idx = :i', { ':i': classIndex });
+    if (!rows.length) return [];
+    const cls = JSON.parse(rows[0].data);
+    const out: BenefitChoice[] = [];
+    for (const [ci, choice] of (cls.proficiency_choices ?? []).entries()) {
+      const opts = choice.from?.options ?? [];
+      const skills = opts
+        .map((o: any) => o.item?.index as string | undefined)
+        .filter((idx: string | undefined): idx is string => !!idx && idx.startsWith('skill-'))
+        .map((idx: string) => idx.replace(/^skill-/, ''));
+      if (skills.length) {
+        out.push({ id: `class-skill-${ci}`, type: 'skill', choose: choice.choose ?? 1, from: skills });
+      }
+    }
+    return out;
+  });
+
+  // ---------------- Character store (writable user.db) ----------------
+  ipcMain.handle('char:list', (): Promise<CharacterSummary[]> => listCharacters());
+  ipcMain.handle('char:get', (_e, id: string): Promise<Character | null> => getCharacter(id));
+  ipcMain.handle('char:save', (_e, c: Character): Promise<Character> => saveCharacter(c));
+  ipcMain.handle('char:delete', (_e, id: string): Promise<void> => deleteCharacter(id));
 }
 
 function createWindow(): void {

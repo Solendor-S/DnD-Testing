@@ -1,0 +1,463 @@
+[
+ {
+  "index": "dwarf",
+  "name": "Dwarf",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nHill Dwarf\nMountain Dwarf\nEberron: Rising from the Last War\nMark of Warding\nPlane Shift: Kaladesh\nPlayer's Handbook\nKingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in dee",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "con",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Dwarvish"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Dwarven Resilience",
+     "desc": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+    },
+    {
+     "name": "Dwarven Combat Training",
+     "desc": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.\nTool Proficiency.\nYou gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."
+    },
+    {
+     "name": "Stonecunning",
+     "desc": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.\nLanguages.\nYou can speak, read, and write Common and Dwarvish. Dwarvi"
+    }
+   ],
+   "choices": [],
+   "speed": 25,
+   "size": "Medium"
+  }
+ },
+ {
+  "index": "elf",
+  "name": "Elf",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nDark Elf\nHigh Elf\nWood Elf\nExplorer's Guide to Wildemount\nPallid Elf\nEberron: Rising from the Last War\nMark of Shadow\nSpelljammer: Adventures in Space\nAstral Elf\nPlane Shift: Kaladesh\nBishtahar/Tirahar Elves\nVahadar Elf\nPlane Shift:",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "dex",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Elvish"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Fey Ancestry",
+     "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+    },
+    {
+     "name": "Trance",
+     "desc": "Elves do not sleep. Instead they meditate deeply, remaining semi-conscious, for 4 hours a day. The Common word for this meditation is \"trance.\" While meditating, you dream after a fashion; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in "
+    },
+    {
+     "name": "Keen Senses",
+     "desc": "You have proficiency in the Perception skill.\nLanguages.\nYou can speak, read, and write Common and Elven."
+    }
+   ],
+   "choices": [],
+   "speed": 30,
+   "size": "Medium"
+  }
+ },
+ {
+  "index": "halfling",
+  "name": "Halfling",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nLightfoot\nStout\nSword Coast Adventurer's Guide\nGhostwise\nExplorer's Guide to Wildemount\nLotusden\nEberron: Rising from the Last War\nMark of Hospitality\nMark of Healing\nPlayer's Handbook\nThe comforts of home are the goals of most half",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "dex",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Halfling"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Lucky",
+     "desc": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
+    },
+    {
+     "name": "Brave",
+     "desc": "You have advantage on saving throws against being frightened."
+    },
+    {
+     "name": "Nimble",
+     "desc": "You can move through the space of any creature that is of a size larger than yours.\nLanguages.\nYou can speak, read, and write Common and Halfling."
+    }
+   ],
+   "choices": [],
+   "speed": 25
+  }
+ },
+ {
+  "index": "human",
+  "name": "Human",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nVariant\nEberron: Rising from the Last War\nMark of Finding\nMark of Handling\nMark of Making\nMark of Passage\nMark of Sentinel\nPlane Shift: Dominaria\nKeldon\nPlane Shift: Innistrad\nGavony\nKessig\nNephalia\nStensia\nPlayer's Handbook\nIn the ",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Skills",
+     "desc": "You gain proficiency in one skill of your choice."
+    },
+    {
+     "name": "Feat",
+     "desc": "You gain one\nFeat\nof your choice.\nEberron: Rising from the Last War\nMark of Finding\nIf your Human has the Mark of Finding, replace all Racial Traits found in the\nPlayer's Handbook\nwith these, except for Age, Alignment, Size, and Speed.\nAbility Score Increase.\nYour Wisdom score increases by 2, and yo"
+    },
+    {
+     "name": "Darkvision",
+     "desc": "You can see in dim light within 60ft. of you as if it were bright light, and in darkness as if it were dim light. You can't discern colors in darkness, only shades of grey."
+    },
+    {
+     "name": "Hunter's Intuition",
+     "desc": "Whenever you make a Wisdom (Perception) or a Wisdom (Survival) check, you can roll a d4 and add the number rolled to the total ability check."
+    },
+    {
+     "name": "Finder's Magic",
+     "desc": "You can cast the\nHunter's Mark\nspell with this trait. Starting at 3rd level, you can also cast the\nLocate Object\nspell with it. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Wisdom is your Spellcasting Ability for these spells.\nLanguages.\nY"
+    },
+    {
+     "name": "Spells of the Mark",
+     "desc": "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your Spellcasting class."
+    }
+   ],
+   "choices": [
+    {
+     "id": "skill",
+     "type": "skill",
+     "choose": 1,
+     "from": "any"
+    }
+   ],
+   "speed": 30
+  }
+ },
+ {
+  "index": "dragonborn",
+  "name": "Dragonborn",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nExplorer's Guide to Wildemount\nDraconblood\nRavenite\nFizban's Treasury of Dragons\nChromatic\nMetallic\nGem\nUnearthed Arcana\nChromatic\nMetallic\nGem\nPlayer's Handbook\nBorn of dragons, as their name proclaims, the dragonborn walk proudly ",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "str",
+     "bonus": 2
+    },
+    {
+     "ability": "cha",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Draconic"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Draconic Ancestry",
+     "desc": "You are distantly related to a particular kind of dragon. Choose a type of dragon from the below list; this determines the damage and area of your breath weapon, and the type of resistance you gain.\nDragon Color\nDamage Type\nBreath Weapon\nBlack\nAcid\n5 by 30 ft. line (DEX save)\nBlue\nLightning\n5 by 30 "
+    },
+    {
+     "name": "Breath Weapon",
+     "desc": "You can use your action to exhale destructive energy. It deals damage in an area according to your ancestry. When you use your breath weapon, all creatures in the area must make a saving throw, the type of which is determined by your ancestry. The DC of this saving throw is 8 + your Constitution mod"
+    },
+    {
+     "name": "Damage Resistance",
+     "desc": "You have resistance to the damage type associated with your ancestry.\nLanguages.\nYou can read, speak, and write Common and Draconic.\nExplorer's Guide to Wildemount\nDraconblood\nDraconbloods possess long tails and a knack for social manipulation. They remember the days when they were once mighty conqu"
+    },
+    {
+     "name": "Darkvision",
+     "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Forceful Presence",
+     "desc": "When you make a Intimidation or Persuasion check, you can do so with advantage once per long rest.\nRavenite\nRavenites have no tails and a hearty physique. They remember the days when they were slaves to the"
+    }
+   ],
+   "choices": [],
+   "speed": 30,
+   "size": "Medium"
+  }
+ },
+ {
+  "index": "gnome",
+  "name": "Gnome",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nForest\nRock\nEberron: Rising from the Last War\nMark of Scribing\nPlayer's Handbook\nA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum:",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "int",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Gnomish"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Gnome Cunning",
+     "desc": "You have advantage on all Intelligence, Wisdom, and Charisma saves against magic.\nLanguages.\nYou can read, speak, and write Common and Gnomish."
+    }
+   ],
+   "choices": [],
+   "speed": 25,
+   "size": "Small"
+  }
+ },
+ {
+  "index": "half-elf",
+  "name": "Half Elf",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nEberron: Rising from the Last War\nMark of Detection\nMark of Storm\nPlayer's Handbook\nWalking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human ",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "cha",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Elvish"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Thanks to your elven heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Fey Ancestry",
+     "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.\nLanguages.\nYou can read, speak, and write Common, Elven, and one language of your choice."
+    },
+    {
+     "name": "Half-Elf Versatility",
+     "desc": "Choose one of the following traits:"
+    },
+    {
+     "name": "Skill Versatility (General)",
+     "desc": "You gain proficiency in two skills of your choice.\nElf Weapon Training (High or Wood Elf Heritage).\nYou have proficiency with the longsword, shortsword, shortbow, and longbow."
+    },
+    {
+     "name": "Cantrip (High Elf Heritage)",
+     "desc": "You know one cantrip of your choice from the\nwizard spell list\n. Intelligence is your spellcasting ability for it."
+    },
+    {
+     "name": "Fleet of Foot (Wood Elf Heritage)",
+     "desc": "Your base walking speed increases to 35 feet."
+    },
+    {
+     "name": "Mask of the Wild (Wood Elf Heritage)",
+     "desc": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+    },
+    {
+     "name": "Drow Magic (Dark Elf Heritage)",
+     "desc": "You know the\nDancing Lights\ncantrip. When you reach 3rd level, you can cast\nFaerie Fire\nonce, and it recharges after a long rest. When you reach 5th level, you can cast\nDarkness\nonce, and it recharges after a long rest. Charisma is your spellcasting ability for these spells."
+    }
+   ],
+   "choices": [
+    {
+     "id": "asi",
+     "type": "ability",
+     "choose": 2,
+     "from": "any",
+     "bonus": 1
+    },
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 1,
+     "from": "any"
+    },
+    {
+     "id": "skill",
+     "type": "skill",
+     "choose": 2,
+     "from": "any"
+    }
+   ],
+   "speed": 30,
+   "size": "Medium"
+  }
+ },
+ {
+  "index": "half-orc",
+  "name": "Half Orc",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nEberron: Rising from the Last War\nMark of Finding\nPlayer's Handbook\nWhen alliances between humans and orcs are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood givi",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "str",
+     "bonus": 2
+    },
+    {
+     "ability": "con",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Orc"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Menacing",
+     "desc": "You gain proficiency in the Intimidation skill."
+    },
+    {
+     "name": "Relentless Endurance",
+     "desc": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+    },
+    {
+     "name": "Savage Attacks",
+     "desc": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.\nLanguages.\nYou can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no sc"
+    },
+    {
+     "name": "Hunter's Intuition",
+     "desc": "Whenever you make a Wisdom (Perception) or a Wisdom (Survival) check, you can roll a d4 and add the number rolled to the total ability check."
+    },
+    {
+     "name": "Finder's Magic",
+     "desc": "You can cast the\nHunter's Mark\nspell with this trait. Starting at 3rd level, you can also cast the\nLocate Object\nspell with it. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Wisdom is your Spellcasting Ability for these spells.\nLanguages.\nY"
+    },
+    {
+     "name": "Spells of the Mark",
+     "desc": "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your Spellcasting class."
+    }
+   ],
+   "choices": [],
+   "speed": 30,
+   "size": "Medium"
+  }
+ },
+ {
+  "index": "tiefling",
+  "name": "Tiefling",
+  "kind": "race",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nPlayer's Handbook\nBloodline of Asmodeus\nMordenkainen's Tome of Foes\nBloodline of Baalzebul\nBloodline of Dispater\nBloodline of Fierna\nBloodline of Glasya\nBloodline of Levistus\nBloodline of Mammon\nBloodline of Mephistopheles\nBloodline of Zariel\nSword C",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "cha",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [
+    "Common",
+    "Infernal"
+   ],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can\u2019t discern color in darkness, only shades of gray."
+    },
+    {
+     "name": "Hellish Resistance",
+     "desc": "You have resistance to fire damage.\nLanguages.\nYou can speak, read, and write Common and Infernal."
+    }
+   ],
+   "choices": [],
+   "speed": 30,
+   "size": "Medium"
+  }
+ }
+]

@@ -1,4 +1,5 @@
 /** Display helpers for SRD data. */
+import { abilityMod } from '@dnd/shared';
 
 export function formatCr(cr: number): string {
   if (cr === 0) return '0';
@@ -14,9 +15,13 @@ export function formatSpellLevel(level: number): string {
   return `${level}${suffix}-level`;
 }
 
-export function abilityModifier(score: number): string {
-  const mod = Math.floor((score - 10) / 2);
+/** Format an ability modifier with an explicit sign, e.g. "+3" / "-1". */
+export function formatModifier(mod: number): string {
   return mod >= 0 ? `+${mod}` : String(mod);
+}
+
+export function abilityModifier(score: number): string {
+  return formatModifier(abilityMod(score));
 }
 
 export function titleCase(s: string): string {

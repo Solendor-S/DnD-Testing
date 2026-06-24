@@ -1,0 +1,340 @@
+[
+ {
+  "index": "hill-dwarf",
+  "name": "Hill Dwarf",
+  "kind": "subrace",
+  "parent": "dwarf",
+  "description": "Hill Dwarf\nAs a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerun in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and ",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "wis",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Dwarven Toughness",
+     "desc": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+    }
+   ],
+   "choices": [],
+   "hpPerLevel": 1
+  }
+ },
+ {
+  "index": "mountain-dwarf",
+  "name": "Mountain Dwarf",
+  "kind": "subrace",
+  "parent": "dwarf",
+  "description": "Mountain Dwarf\nAs a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You're probably on the tall side (for a dwarf), and tend toward lighter coloration, The s",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "str",
+     "bonus": 2
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Dwarven Armor Training",
+     "desc": "You have proficiency with light and medium armor.\nEberron: Rising from the Last War\nMark of Warding\nIf you're a dwarf with the Mark of Warding, you have this subrace, with the following traits.\nAbility Score Increase.\nYour Intelligence score increases by 1"
+    },
+    {
+     "name": "Warder's Intuition",
+     "desc": "Whenever you make an Intelligence (Investigation) check or an Ability Check involving Thieves' Tools, you can roll a d4 and add the number rolled to the total ability check."
+    },
+    {
+     "name": "Wards and Seals",
+     "desc": "You can cast the\nAlarm\nand\nMage Armor\nspells with this trait. Starting at 3rd level, you can also cast the\nArcane Lock\nspell with it. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Intelligence is your Spellcasting Ability for these spells, "
+    },
+    {
+     "name": "Spells of the Mark",
+     "desc": "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of Warding Spells table are added to the spell list of your Spellcasting class."
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "high-elf",
+  "name": "High Elf",
+  "kind": "subrace",
+  "parent": "elf",
+  "description": "High Elf\nAs a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "int",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Cantrip",
+     "desc": "You know one cantrip of your choice from the\nWizard spell list\n. Intelligence is your spellcasting ability for it."
+    },
+    {
+     "name": "Elf Weapon Training",
+     "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+    },
+    {
+     "name": "Extra Language",
+     "desc": "You can read, speak, and write one additional language of your choice."
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "wood-elf",
+  "name": "Wood Elf",
+  "kind": "subrace",
+  "parent": "elf",
+  "description": "Wood Elf\nAs a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhaw",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "wis",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Elf Weapon Training",
+     "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+    },
+    {
+     "name": "Fleet of Foot",
+     "desc": "Your base walking speed increases to 35 feet."
+    },
+    {
+     "name": "Mask of the Wild",
+     "desc": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.\nExplorer's Guide to Wildemount"
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "dark-elf",
+  "name": "Dark Elf",
+  "kind": "subrace",
+  "parent": "elf",
+  "description": "Dark Elf\nDescended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have buil",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "cha",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Darkvision",
+     "desc": "Your darkvision has a range of 120 feet, instead of 60."
+    },
+    {
+     "name": "Superior Darkvision",
+     "desc": "Your darkvision has a range of 120 feet, instead of 60."
+    },
+    {
+     "name": "Sunlight Sensitivity",
+     "desc": "You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight."
+    },
+    {
+     "name": "Drow Magic",
+     "desc": "You know the\nDancing Lights\ncantrip. When you reach 3rd level, you can cast the\nFaerie Fire\nspell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the\nDarkness\nspell once and regain the ability to do so when you finish a long re"
+    },
+    {
+     "name": "Drow Weapon Training",
+     "desc": "You have proficiency with rapiers, shortswords, and hand crossbows."
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "lightfoot-halfling",
+  "name": "Lightfoot Halfling",
+  "kind": "subrace",
+  "parent": "halfling",
+  "description": "lightfoot halflings have spread the farthest and thus are the most common variety.\nLightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a noma",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "cha",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Naturally Stealthy",
+     "desc": "You can attempt to hide even when you are only obscured by a creature that is at least one size larger than you."
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "stout-halfling",
+  "name": "Stout Halfling",
+  "kind": "subrace",
+  "parent": "halfling",
+  "description": "stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they're m",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "con",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Stout Resilience",
+     "desc": "You have advantage on saving throws against poison, and you have resistance to poison damage.\nSword Coast Adventurer's Guide\nGhostwise\nGhostwise halflings trace their ancestry back to a war among halfling tribes that sent their ancestors into flight from Luiren. Ghostwise halflings are the rarest of"
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "forest-gnome",
+  "name": "Forest Gnome",
+  "kind": "subrace",
+  "parent": "gnome",
+  "description": "Forest gnomes tend to be friendly with other good-spirited woodland folk, and they regard elves and good fey as their most important allies. These gnomes also befriend small forest animals and rely on",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "dex",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Natural Illusionist",
+     "desc": "You know the\nMinor Illusion\ncantrip. Intelligence is your spellcasting modifier for it."
+    },
+    {
+     "name": "Speak with Small Beasts",
+     "desc": "Through sound and gestures, you may communicate simple ideas with Small or smaller beasts."
+    }
+   ],
+   "choices": []
+  }
+ },
+ {
+  "index": "rock-gnome",
+  "name": "Rock Gnome",
+  "kind": "subrace",
+  "parent": "gnome",
+  "description": "rock gnomes, including the tinker gnomes of the Dragonlance setting.\nAbility Score Increase.\nYour Constitution score increases by 1.\nArtificer's Lore.\nWhenever you make an Intelligence (History) check",
+  "grant": {
+   "abilityBonuses": [
+    {
+     "ability": "con",
+     "bonus": 1
+    }
+   ],
+   "skillProficiencies": [],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Artificer's Lore",
+     "desc": "Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply."
+    },
+    {
+     "name": "Tinker",
+     "desc": "You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or whe"
+    },
+    {
+     "name": "Clockwork Toy",
+     "desc": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
+    },
+    {
+     "name": "Fire Starter",
+     "desc": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+    },
+    {
+     "name": "Music Box",
+     "desc": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.\nAt your DM's discretion, you may make other objects with effects similar in power to these. The\nPrestidigitation\ncantrip is a good baseline for such effect"
+    },
+    {
+     "name": "Gifted Scribe",
+     "desc": "Whenever you make an Intelligence (History) or an Ability Check involving Calligrapher's Supplies, you can roll a d4 and add the number rolled to the total ability check."
+    },
+    {
+     "name": "Scribe's Insight",
+     "desc": "You know the\nMessage\ncantrip. You can also cast the\nComprehend Languages\nspell with this trait. Starting at 3rd level, you can also cast the\nMagic Mouth\nspell with it. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Intelligence is your Spell"
+    },
+    {
+     "name": "Spells of the Mark",
+     "desc": "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of Scribing Spells table are added to the spell list of your Spellcasting class."
+    }
+   ],
+   "choices": []
+  }
+ }
+]

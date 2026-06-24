@@ -40,6 +40,12 @@ export interface SpellDetail extends SpellSummary {
   desc: string; // joined paragraphs
   higherLevel: string | null;
   damageType: string | null;
+  // Rollable fields — consumed by the dice engine's castSpell().
+  attackType: 'ranged' | 'melee' | null;
+  dc: { ability: string; success: string } | null;
+  damageBySlot: Record<string, string> | null;
+  damageByCharLevel: Record<string, string> | null;
+  healBySlot: Record<string, string> | null;
 }
 
 export interface SpellQuery {
@@ -140,4 +146,30 @@ export interface RaceDetail extends RaceSummary {
   languages: string[];
   traits: string[];
   subraces: string[];
+}
+
+// ---------- Weapons (SRD equipment subset, for character attacks) ----------
+
+export interface WeaponDef {
+  index: string;
+  name: string;
+  category: string; // "Simple" | "Martial"
+  range: string;    // "Melee" | "Ranged"
+  damageDice: string;
+  damageType: string;
+  versatileDice: string | null;
+  properties: string[];
+  normalRange: number | null;
+  longRange: number | null;
+}
+
+export interface ArmorDef {
+  index: string;
+  name: string;
+  category: string; // "Light" | "Medium" | "Heavy" | "Shield"
+  base: number;
+  dexBonus: boolean;
+  maxBonus: number | null;
+  strMinimum: number;
+  stealthDisadvantage: boolean;
 }

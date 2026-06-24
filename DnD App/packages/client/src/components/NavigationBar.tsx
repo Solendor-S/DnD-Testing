@@ -1,3 +1,5 @@
+import { useCharacters } from '../context/CharacterContext';
+
 export type AppView = 'rules' | 'characters' | 'combat' | 'dice';
 
 interface NavItem {
@@ -8,9 +10,9 @@ interface NavItem {
 
 const ITEMS: NavItem[] = [
   { id: 'rules', label: 'Rules Browser', enabled: true },
-  { id: 'characters', label: 'Characters', enabled: false },
+  { id: 'characters', label: 'Characters', enabled: true },
+  { id: 'dice', label: 'Dice', enabled: true },
   { id: 'combat', label: 'Combat', enabled: false },
-  { id: 'dice', label: 'Dice', enabled: false },
 ];
 
 interface Props {
@@ -19,6 +21,8 @@ interface Props {
 }
 
 export function NavigationBar({ view, onChange }: Props) {
+  const { characters, activeId, setActive } = useCharacters();
+
   return (
     <header className="nav-bar">
       <div className="nav-brand">
@@ -38,6 +42,19 @@ export function NavigationBar({ view, onChange }: Props) {
           </button>
         ))}
       </nav>
+      <div className="nav-active-character">
+        <span className="nav-active-label">Active</span>
+        <select
+          className="nav-character-select"
+          value={activeId ?? ''}
+          onChange={(e) => setActive(e.target.value || null)}
+        >
+          <option value="">Custom (no character)</option>
+          {characters.map((c) => (
+            <option key={c.id} value={c.id}>{c.name}</option>
+          ))}
+        </select>
+      </div>
     </header>
   );
 }

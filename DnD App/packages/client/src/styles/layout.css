@@ -47,6 +47,29 @@
   display: flex;
   gap: 4px;
 }
+
+.nav-active-character {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-active-label {
+  color: var(--text-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nav-character-select {
+  background: var(--bg-input);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 5px 9px;
+  font-size: 13px;
+  min-width: 160px;
+}
+.nav-character-select:focus { outline: none; border-color: var(--gold-solid); }
 .nav-tab {
   background: transparent;
   border: none;

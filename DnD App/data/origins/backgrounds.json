@@ -1,0 +1,363 @@
+[
+ {
+  "index": "acolyte",
+  "name": "Acolyte",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nShelter of the Faithful\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and t",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "insight",
+    "religion"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": [
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 2,
+     "from": "any"
+    }
+   ]
+  }
+ },
+ {
+  "index": "charlatan",
+  "name": "Charlatan",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nFavorite Schemes\nFalse Identity\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou have always had a way with people. You know what makes them tick, you can tease out their hearts' desires after a few minutes of conversation",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "deception"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "Disguise kit",
+    "forgery kit"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ },
+ {
+  "index": "criminal",
+  "name": "Criminal",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nVariants\nSpy\nFeatures\nCriminal Specialty\nCriminal Contact\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "deception",
+    "stealth"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "One type of gaming set",
+    "thieves' tools"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ },
+ {
+  "index": "entertainer",
+  "name": "Entertainer",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nVariants\nGladiator\nFeatures\nEntertainer Routines\nBy Popular Demand\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou thrive in front of an audience. You know how to entrance them, entertain them, and even inspire them. Your poetics ",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "acrobatics",
+    "performance"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "Disguise kit",
+    "one type of musical instrument"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ },
+ {
+  "index": "folk-hero",
+  "name": "Folk Hero",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nDefining Event\nRustic Hospitality\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaw\nYou come from a humble social rank, but you are destined for so much more. Already the people of your home village regard you as their champion,",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "survival"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "One type of artisan's tools",
+    "vehicles (l",
+    ")"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ },
+ {
+  "index": "guild-artisan",
+  "name": "Guild Artisan",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nVariants\nGuild Merchant\nGuild Business\nGuild Business\nGuild Membership\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou are a member of an artisan's guild, skilled in a particular field and closely associated with other artisans. Y",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "insight",
+    "persuasion"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "One type of artisan's tools"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": [
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 1,
+     "from": "any"
+    }
+   ]
+  }
+ },
+ {
+  "index": "hermit",
+  "name": "Hermit",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nLife of Seclusion\nDiscovery\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nOther Hermits\nYou lived in seclusion \u2013 either in a sheltered community such as a monastery, or entirely alone \u2013 for a formative part of your life. In",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "medicine",
+    "religion"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "Herbalism kit"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": [
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 1,
+     "from": "any"
+    }
+   ]
+  }
+ },
+ {
+  "index": "noble",
+  "name": "Noble",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nVariants\nNoble: Knight\nVariant Feature: Retainers\nFeatures\nPosition of Privilege\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou understand wealth, power, and privilege. You carry a noble title, and your family owns land, collects",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "history",
+    "persuasion"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "One type of gaming set"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [
+    {
+     "name": "Retainers",
+     "desc": ""
+    }
+   ],
+   "choices": [
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 1,
+     "from": "any"
+    }
+   ]
+  }
+ },
+ {
+  "index": "outlander",
+  "name": "Outlander",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nOrigin\nWanderer\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou grew up in the wilds, far from civilization and the comforts of town and technology. You've witnessed the migration of herds larger than forests, survived we",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "athletics",
+    "survival"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "One type of musical instrument"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": [
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 1,
+     "from": "any"
+    }
+   ]
+  }
+ },
+ {
+  "index": "sage",
+  "name": "Sage",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nSpecialty\nResearcher\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that int",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "arcana",
+    "history"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": [
+    {
+     "id": "lang",
+     "type": "language",
+     "choose": 2,
+     "from": "any"
+    }
+   ]
+  }
+ },
+ {
+  "index": "sailor",
+  "name": "Sailor",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nVariants\nPirate\nFeatures\nShip's Passage\nAlternative: Bad Reputation\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou sailed on a seagoing vessel for years. In that time, you faced down mighty storms, monsters of the deep, and those",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "athletics",
+    "perception"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "Navigator's tools",
+    "vehicles (water)"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ },
+ {
+  "index": "soldier",
+  "name": "Soldier",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nSpecialty\nMilitary Rank\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nWar has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and armor, learned basic survival techniqu",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "athletics",
+    "intimidation"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "One type of gaming set",
+    "vehicles (l",
+    ")"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ },
+ {
+  "index": "urchin",
+  "name": "Urchin",
+  "kind": "background",
+  "parent": null,
+  "description": "Fold\nUnfold\nTable of Contents\nFeatures\nCity Secrets\nSuggested Characteristics\nPersonality Traits\nIdeals\nBonds\nFlaws\nYou grew up on the streets alone, orphaned, and poor, You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fie",
+  "grant": {
+   "abilityBonuses": [],
+   "skillProficiencies": [
+    "stealth"
+   ],
+   "expertise": [],
+   "languages": [],
+   "toolProficiencies": [
+    "Disguise kit",
+    "thieves' tools"
+   ],
+   "weaponProficiencies": [],
+   "armorProficiencies": [],
+   "saveProficiencies": [],
+   "features": [],
+   "choices": []
+  }
+ }
+]
